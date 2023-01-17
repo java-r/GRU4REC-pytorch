@@ -7,9 +7,12 @@ import numpy as np
 import pandas as pd
 import datetime
 
-dataBefore = 'C:/Users/s-moh/0-Labwork/Rakuten Project/Dataset/RecSys_Dataset_Before/yoochoose-clicks.dat' #Path to Original Training Dataset "Clicks" File
-dataTestBefore = 'C:/Users/s-moh/0-Labwork/Rakuten Project/Dataset/RecSys_Dataset_Before/yoochoose-test.dat' #Path to Original Testing Dataset "Clicks" File
-dataAfter = 'C:/Users/s-moh/0-Labwork/Rakuten Project/Dataset/RecSys_Dataset_After/' #Path to Processed Dataset Folder
+# Path to Original Training Dataset "Clicks" File
+dataBefore = '/Users/akira/Library/Mobile Documents/com~apple~CloudDocs/UEC/nakagawa/archive/yoochoose-clicks.dat'
+# Path to Original Testing Dataset "Clicks" File
+dataTestBefore = '/Users/akira/Library/Mobile Documents/com~apple~CloudDocs/UEC/nakagawa/archive/yoochoose-test.dat'
+# Path to Processed Dataset Folder
+dataAfter = '/Users/akira/Library/Mobile Documents/com~apple~CloudDocs/UEC/nakagawa/archive/yoochoose-data/'
 dayTime = 86400 #Validation Only one day = 86400 seconds
 
 def removeShortSessions(data):
