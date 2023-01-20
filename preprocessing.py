@@ -8,11 +8,11 @@ import pandas as pd
 import datetime
 
 # Path to Original Training Dataset "Clicks" File
-dataBefore = '/Users/akira/Library/Mobile Documents/com~apple~CloudDocs/UEC/nakagawa/archive/yoochoose-clicks.dat'
+dataBefore = '/Users/akira/Library/Mobile Documents/com~apple~CloudDocs/UEC/nakagawa/GRU4REC-pytorch/data/raw_data/yoochoose-clicks-super-small.dat'
 # Path to Original Testing Dataset "Clicks" File
-dataTestBefore = '/Users/akira/Library/Mobile Documents/com~apple~CloudDocs/UEC/nakagawa/archive/yoochoose-test.dat'
+dataTestBefore = '/Users/akira/Library/Mobile Documents/com~apple~CloudDocs/UEC/nakagawa/GRU4REC-pytorch/data/raw_data/yoochoose-test.dat'
 # Path to Processed Dataset Folder
-dataAfter = '/Users/akira/Library/Mobile Documents/com~apple~CloudDocs/UEC/nakagawa/archive/yoochoose-data/'
+dataAfter = '/Users/akira/Library/Mobile Documents/com~apple~CloudDocs/UEC/nakagawa/GRU4REC-pytorch/data/preprocessed_data/'
 dayTime = 86400 #Validation Only one day = 86400 seconds
 
 def removeShortSessions(data):
