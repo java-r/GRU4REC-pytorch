@@ -34,7 +34,7 @@ parser.add_argument('--time_sort', default=False, type=bool) #In case items are 
 parser.add_argument('--model_name', default='GRU4REC-CrossEntropy', type=str)
 parser.add_argument('--save_dir', default='models', type=str)
 parser.add_argument(
-    '--data_folder', default='/Users/akira/Library/Mobile Documents/com~apple~CloudDocs/UEC/nakagawa/GRU4REC-pytorch/data/preprocessed_data', type=str)
+    '--data_folder', default='./data/preprocessed_data/rakuten-data/', type=str)
 parser.add_argument('--train_data', default='recSys15TrainOnly.txt', type=str)
 parser.add_argument('--valid_data', default='recSys15Valid.txt', type=str)
 parser.add_argument("--is_eval", action='store_true') #should be used during testing and eliminated during training
