@@ -10,13 +10,56 @@ Final result: recall = 0.49, mrr = 0.15
 Final result: recall = 0.50, mrr = 0.15
 
 # 楽天データの結果
-## model_00000
-Final result: recall = 0.02, mrr = 0.01
-## model_00001
-Final result: recall = 0.02, mrr = 0.01
-## model_00002
-Final result: recall = 0.02, mrr = 0.01
-## model_00003
-Final result: recall = 0.01, mrr = 0.00
-## model_00004
-Final result: recall = 0.01, mrr = 0.00
+---
+## 20_35
+### model_00000
+Final result: recall = 0.60, mrr = 0.14
+### model_00001
+Final result: recall = 0.58, mrr = 0.14
+### model_00002
+Final result: recall = 0.57, mrr = 0.14
+### model_00003
+Final result: recall = 0.56, mrr = 0.14
+### model_00004
+Final result: recall = 0.56, mrr = 0.14
+
+---
+## 35_50
+### model_00000
+Final result: recall = 0.60, mrr = 0.14
+### model_00001
+Final result: recall = 0.58, mrr = 0.14
+### model_00002
+Final result: recall = 0.57, mrr = 0.14
+### model_00003
+Final result: recall = 0.56, mrr = 0.14
+### model_00004
+Final result: recall = 0.56, mrr = 0.14
+
+---
+## 50_65
+### model_00000
+Final result: recall = 0.56, mrr = 0.17
+### model_00001
+Final result: recall = 0.57, mrr = 0.17
+### model_00002
+Final result: recall = 0.56, mrr = 0.16
+### model_00003
+Final result: recall = 0.56, mrr = 0.15
+### model_00004
+Final result: recall = 0.56, mrr = 0.15
+
+---
+## 65_80
+### model_00000
+Final result: recall = 0.54, mrr = 0.12
+### model_00001
+Final result: recall = 0.55, mrr = 0.12
+### model_00002
+Final result: recall = 0.56, mrr = 0.12
+### model_00003
+Final result: recall = 0.56, mrr = 0.12
+### model_00004
+Final result: recall = 0.56, mrr = 0.11
+
+

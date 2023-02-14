@@ -8,12 +8,13 @@ import pandas as pd
 import datetime
 from datetime import timedelta
 
+generation = '65_80'
 # Path to Original Training Dataset "Clicks" File
-dataBefore = './data/raw_data/rakuten-data/processed_20_35.csv'
+dataBefore = './data/raw_data/rakuten-data/'+generation+'/'+generation+'.csv'
 # Path to Original Testing Dataset "Clicks" File
-dataTestBefore = './data/raw_data/rakuten-data/processed_20_35.csv'
+dataTestBefore = './data/raw_data/rakuten-data/'+generation+'/'+generation+'.csv'
 # Path to Processed Dataset Folder
-dataAfter = './data/preprocessed_data/rakuten-data/'
+dataAfter = './data/preprocessed_data/rakuten-data/'+generation+'/'
 dayTime = 86400  # Validation Only one day = 86400 seconds
 
 
@@ -26,10 +27,10 @@ def removeShortSessions(data):
 
 
 # Read Dataset in pandas Dataframe (Ignore Category Column)
-train = pd.read_csv(dataBefore, sep=',', header=None, usecols=[
-                    0, 1, 6], dtype={0: np.int32, 1: str, 2: np.int64})
-test = pd.read_csv(dataTestBefore, sep=',', header=None, usecols=[
-                   0, 1, 6], dtype={0: np.int32, 1: str, 2: np.int64})
+train = pd.read_csv(dataBefore, sep=',', header=0, usecols=[
+                    0, 1, 6], dtype={0: np.int32, 1: np.int64, 2: np.int64})
+test = pd.read_csv(dataTestBefore, sep=',', header=0, usecols=[
+                   0, 1, 6], dtype={0: np.int32, 1: np.int64, 2: np.int64})
 train.columns = ['SessionID', 'Time', 'ItemID']  # Headers of dataframe
 test.columns = ['SessionID', 'Time', 'ItemID']  # Headers of dataframe
 
