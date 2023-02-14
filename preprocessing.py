@@ -28,9 +28,9 @@ def removeShortSessions(data):
 
 # Read Dataset in pandas Dataframe (Ignore Category Column)
 train = pd.read_csv(dataBefore, sep=',', header=0, usecols=[
-                    0, 1, 6], dtype={0: np.int32, 1: np.int64, 2: np.int64})
+                    0, 1, 8], dtype={0: np.int32, 1: np.int64, 2: np.int64})
 test = pd.read_csv(dataTestBefore, sep=',', header=0, usecols=[
-                   0, 1, 6], dtype={0: np.int32, 1: np.int64, 2: np.int64})
+                   0, 1, 8], dtype={0: np.int32, 1: np.int64, 2: np.int64})
 train.columns = ['SessionID', 'Time', 'ItemID']  # Headers of dataframe
 test.columns = ['SessionID', 'Time', 'ItemID']  # Headers of dataframe
 
